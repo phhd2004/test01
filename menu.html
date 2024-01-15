@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .wrapper{
+        height: 100%;
+        width: auto;
+        background-color: aqua;
+        margin: 0px auto;
+        padding: 0px;
+        float:left;
+    }
+    .header{
+        height: 60px;
+        width: auto;
+        text-indent: 50%;
+        border: 2px solid;
+        
+
+    }
+    .menu li{
+        float:left;
+        background-color: rgb(188, 206, 65);
+        width: 150px;
+        height: 50px;
+        list-style: none;
+        line-height: 50px;
+        position:relative;
+        text-indent: 15px;
+        border: 1px solid;
+        border-radius: 10%;
+
+    }
+    li a{
+        text-decoration: none;
+    }
+    .menu li:hover{
+        background-color: blueviolet;
+    }
+    li:hover>a{ color: yellow;font-weight: bold;}
+    .menu li .sub-menu{
+        display: none;
+        position: absolute;
+    }
+    .menu li:hover>.sub-menu{
+        display: block;
+    }
+    .menu li .sub-menu li:hover>.sub-menu{
+        top: 0px;
+        left: 150%;
+    }
+</style>
+<body>
+    <div class="wrapper">
+        <div class="header">VUI CHOI CO THUONG</div>
+        <ul class="menu">
+            <li><a href="#"> HOME</a></li>
+            <li><a href="#">NUOI HU</a></li>
+            <li><a href="#">THE BAI</a>
+                <ul class="sub-menu">
+                    <li><a href="">GAME CARD</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">TIEN LEN</a></li>
+                            <li><a href="#">POKER</a></li>
+                            <li><a href="#">XIDICH</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">BACARAT</a></li>
+                    <li><a href="#">CHAN LE</a></li>
+                </ul>
+            </li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">HELP</a></li>
+        </ul>
+    </div>
+</body>
+</html>
