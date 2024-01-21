@@ -1,0 +1,82 @@
+/* ... (existing styles) ... */
+
+.header {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    background-color: aqua;
+}
+
+
+
+.hotline {
+    margin-right: 10px;
+    margin-left:auto;
+}
+
+.hotline a{
+    text-decoration: none;
+
+}
+
+.mid {
+    display: flex;
+    background-color: red;
+}
+
+.list {
+    margin-right: auto; 
+}
+
+.menu {
+    list-style: none;
+}
+
+.menu li {
+    margin-right: 20px; 
+}
+.menu a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: #333;
+    line-height: 50px;
+}
+
+.menu li:hover {
+    background-color: blueviolet;
+}
+
+.menu li:hover > a {
+    color: yellow;
+    font-weight: bold;
+}
+
+.sub-menu {
+    display: none;
+    position: absolute;
+    background-color: #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    list-style: none;
+
+}
+
+.menu li:hover .sub-menu {
+    display: block;
+}
+
+.sub-menu li {
+    width: 100%;
+}
+
+.sub-menu a {
+    padding: 10px;
+    text-indent: 15px;
+    border-bottom: 1px solid #999;
+}
+
+.sub-menu li:hover > .sub-menu {
+    top: 0;
+    left: 100%;
+}
